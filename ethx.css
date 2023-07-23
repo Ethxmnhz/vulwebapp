@@ -1,0 +1,191 @@
+/* styles.css */
+
+@font-face {
+    font-family: "ethx"; /* Give your font a name */
+    src: url("Cyberpunk-Regular.ttf") format("truetype"); /* Adjust the font format if needed */
+}
+@keyframes glitchAnimation {
+    0%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+      transform: translateX(0);
+    }
+    10%, 50% {
+      transform: translateX(10px); /* Glitch-like horizontal movement */
+    }
+    25%, 75% {
+      transform: translateY(5px); /* Glitch-like vertical movement */
+    }
+  }
+  
+  
+  
+  
+  
+  
+
+.ethx-text h1 {
+    font-family: "ethx", sans-serif;
+  font-size: 100px;
+  margin: 0;
+  color: #00ff00; /* Neon green color */
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00; /* Glowing text effect */
+  animation: glitchAnimation 3s infinite;/* Apply the flickering animation */
+}
+
+
+
+
+
+
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 200px;
+    padding: 0px;
+    background-color: #9900ff04;
+    /*background-image: url(images.jpg);*/
+    background-size: 100%;
+    text-align:center;
+    background-attachment:fixed;
+    
+
+}
+  
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header {
+    height: 80px; /* Set a fixed height for the header */
+    background-color: #ffffff00;
+    color: #d8f006;
+    display: flex;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+header h1 {
+    font-family: "ethx", sans-serif;
+    font-size: 40px; /* Adjust the font size */
+    margin: 0; /* Remove margin to avoid unnecessary spacing */
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.box {
+    width: 400px; /* Set the width of the big box */
+    height: 200px; /* Set the height of the big box */
+    background-color: #f1f1f1;
+    border: 2px solid #f8e800;
+    padding: 20px;
+    margin: 1000px auto 50px;
+    align-items: center;
+    text-align: center;
+    font-family: "ethx",sans-serif;
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-size: 100%;
+    border-radius: 10%;
+    transition: transform 1.5s ease;
+}
+.move-left {
+    transform: translateX(-100%);
+}
+
+.move-right {
+    transform: translateX(100%);
+}
+button.signup {
+    background-color: chartreuse;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    position: left;
+    z-index: 1;
+    outline: none!important;
+    overflow: hidden;
+    align-items: end;
+    float: left;
+    width: 140px;
+    height: 60px;
+}
+
+button.signin {
+    background-color: chartreuse;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    position: left;
+    z-index: 1;
+    outline: none!important;
+    overflow: hidden;
+    align-items: end;
+    float: right;
+    width: 140px;
+    height: 60px;
+}
+
+.box textarea {
+    color: #9dff00;
+    font-size: 20px;
+    line-height: normal;
+    resize: vertical;
+}
+
+
+.ethx-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.ethx-text h1 {
+    font-family: "ethx", sans-serif;
+    font-size: 46px;
+    margin: 0;
+    color: #ddf508;
+}
+
+.subtitle h3 {
+    font-family: "ethx", sans-serif;
+  font-size: 20px;
+  margin: 110;
+  color: #c606f7; /* Neon green color */
+  text-shadow: 0 0 10px #00f7ff, 0 0 20px #00a2ff, 0 0 40px #00ff00; /* Glowing text effect */
+  animation: glitchAnimation 3s infinite;
+  color: #08f514;
+ 
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  
+  /* Apply the flickering animation */
+}
+.box h1{
+    color: #d8f006;
+}
+
+
